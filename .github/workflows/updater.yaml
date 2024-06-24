@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v4.0.0
         with:
           token: ${{ secrets.WORKFLOW_SECRET }}
-      - uses: kenz/github-actions-version-updater@v0.8.1
+      - uses: kenz/github-actions-version-updater@v0.8.2beta
         with:
           token: ${{ secrets.WORKFLOW_SECRET }}
