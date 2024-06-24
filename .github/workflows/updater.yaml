@@ -9,3 +9,5 @@ jobs:
     steps:
       - uses: actions/checkout@v4.0.0
       - uses: kenz/github-actions-version-updater@v0.8.1
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
