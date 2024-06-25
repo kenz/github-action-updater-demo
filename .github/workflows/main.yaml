@@ -1,7 +1,7 @@
-# Name of your workflow.
+# Excample workflow to show the difference between using quotation marks and not using them
 name: main
 
-on: [close]
+on: [completed]
 
 env:
   NODE_VERSION: 18.12.1
