@@ -1,0 +1,21 @@
+# Excample workflow to show the difference between using quotation marks and not using them
+name: main
+
+on: [completed]
+
+env:
+  NODE_VERSION: 18.12.1
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.0.0
+      - name: Without quotation
+        uses: actions/setup-node@v3.0.0
+
+      - name: With single quotation
+        uses: 'actions/setup-node@v3.0.0'
+
+      - name: With double quotation
+        uses: "actions/setup-node@v3.0.0"
